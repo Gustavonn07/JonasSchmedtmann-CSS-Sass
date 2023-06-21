@@ -115,7 +115,7 @@ body {
     }
 }
 
-/* Aula 04 e 05*/
+/* Aula 04*/
 .btn:link,
 .btn:visited {
     text-transform: uppercase;
@@ -126,6 +126,7 @@ body {
     display: inline-block;
     border-radius: 100px;
     transition: all 0.2s;
+    position: relative;
 }
 
 /* Usa um efeito de clicado como se fosse na vida real com :hover e :active */
@@ -143,4 +144,46 @@ body {
 .btn-white {
     background-color: #fff;
     color: #777;
+}
+
+/* Aula 05 */
+.btn::after {
+    content: "";
+    display: inline-block;
+    /* É como se fosse um elemento filho do btn por isso da certo */
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    /* Referencia é o primeiro position relative que ele encontrar */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+}
+
+.btn-white::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.btn-animated {
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
 }
