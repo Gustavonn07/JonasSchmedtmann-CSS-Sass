@@ -53,14 +53,15 @@ body {
     left: 50%;
     top: 40%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 
 .heading-primary {
     color: #fff;
     text-transform: uppercase;
-
     backface-visibility: hidden;
+    margin-bottom: 60px;
 }
 
 .heading-primary-main {
@@ -112,4 +113,34 @@ body {
         opacity: 1;
         transform: translateX(0);
     }
+}
+
+/* Aula 04 e 05*/
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    /* Melhor para usar já que o botão não fica com width: 100% */
+    /* Diferente do block */
+    display: inline-block;
+    border-radius: 100px;
+    transition: all 0.2s;
+}
+
+/* Usa um efeito de clicado como se fosse na vida real com :hover e :active */
+/* Diminui a sombra para da um efeito melhor */
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgb(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
 }
