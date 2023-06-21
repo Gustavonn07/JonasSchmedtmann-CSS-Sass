@@ -17,7 +17,7 @@ Nesse repositório irei guardar meus estudos do curso de CSS avançado e Sass (d
 - Conseguir entender como usar Flexbox e Grid em <strong>CSS</strong> e aprender <strong>Sass</strong>.
 - Completar todas as aulas e exercícios.
 - <strong>Não</strong> desistir no processo.
-- Unidades concluidas <strong>(1/10)</strong>.
+- Unidades concluidas <strong>(2/10)</strong>.
 
 <hr>
 <table align='center'>
@@ -34,14 +34,14 @@ Nesse repositório irei guardar meus estudos do curso de CSS avançado e Sass (d
   </tr>
   
   <tr align='center'>
-    <th colspan="2"><h2>Unidade 02</h2>
+    <th colspan="2"><h2>Unidade 02 (21/06/2023)</h2>
      <tr>
        <td><h3 align='center'>Resumo:</h3>
-       <td>
+       <td> Foi explicado o uso de CSS mais avançado iniciando um projeto Natours (nessa unidade finalizamos o Header). Apendemos o uso de Resets, de Clipagem (CSS moderno), de Posições, de Animações e uso criativo de Pseudo-Classes.
      </tr>
      <tr>
        <td><h3 align='center'>Tecnologias Estudadas:</h3>
-       <td align='center'>
+       <td align='center'> <img alt="Gustavo-CSS" height="40" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-plain.svg">
      </tr>
   </tr>
   
