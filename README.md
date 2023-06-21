@@ -37,11 +37,11 @@ Nesse repositório irei guardar meus estudos do curso de CSS avançado e Sass (d
     <th colspan="2"><h2>Unidade 02</h2>
      <tr>
        <td><h3 align='center'>Resumo:</h3>
-       <td>
+       <td> Foi explicado o uso de CSS mais avançado iniciando um projeto Natours (nessa unidade finalizamos o Header). Apendemos o uso de Resets, de Clipagem (CSS moderno), de Posições, de Animações e uso criativo de Pseudo-Classes.
      </tr>
      <tr>
        <td><h3 align='center'>Tecnologias Estudadas:</h3>
-       <td align='center'>
+       <td align='center'> <img alt="Gustavo-CSS" height="40" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-plain.svg">
      </tr>
   </tr>
   
