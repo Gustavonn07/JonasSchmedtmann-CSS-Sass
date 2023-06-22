@@ -17,7 +17,7 @@ Nesse repositório irei guardar meus estudos do curso de CSS avançado e Sass (d
 - Conseguir entender como usar Flexbox e Grid em <strong>CSS</strong> e aprender <strong>Sass</strong>.
 - Completar todas as aulas e exercícios.
 - <strong>Não</strong> desistir no processo.
-- Unidades concluidas <strong>(2/10)</strong>.
+- Unidades concluidas <strong>(3/10)</strong>.
 
 <hr>
 <table align='center'>
