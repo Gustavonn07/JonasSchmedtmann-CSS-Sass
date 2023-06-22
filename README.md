@@ -46,14 +46,14 @@ Nesse repositório irei guardar meus estudos do curso de CSS avançado e Sass (d
   </tr>
   
   <tr align='center'>
-    <th colspan="2"><h2>Unidade 03</h2>
+    <th colspan="2"><h2>Unidade 03 (22/06/2023)</h2>
      <tr>
        <td><h3 align='center'>Resumo:</h3>
-       <td>
+       <td> Foi explicado como o CSS é processado, analisado e redenrizado. Foi ensinado o uso de display Block, Inline-block e Inline, o uso de Positions, como pensar em um layout e usar o método BEM.
      </tr>
      <tr>
        <td><h3 align='center'>Tecnologias Estudadas:</h3>
-       <td align='center'>
+       <td align='center'> <img alt="Gustavo-CSS" height="40" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-plain.svg">
      </tr>
   </tr>
 
