@@ -49,7 +49,7 @@ Nesse repositório irei guardar meus estudos do curso de CSS avançado e Sass (d
     <th colspan="2"><h2>Unidade 03 (22/06/2023)</h2>
      <tr>
        <td><h3 align='center'>Resumo:</h3>
-       <td> Foi explicado como o CSS é processado, analisado e redenrizado. Foi ensinado o uso de display Block, Inline-block e Inline, o uso de Positions, como pensar em um layout e usar o método BEM.
+       <td> Foi explicado como o CSS é processado, analisado e redenrizado. Foi ensinado o uso de display Block, Inline-block e Inline,o uso de rem, o uso de Positions, como pensar e construir um layout e como usar o método BEM (Block Element Modifier).
      </tr>
      <tr>
        <td><h3 align='center'>Tecnologias Estudadas:</h3>
