@@ -1,0 +1,59 @@
+// Aula 16
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+$color-primary: #f9ed69; // Yellow color
+$color-secondary: #f08a5d; // Orange color
+$color-third: #ec9ebe; // Pink color 
+
+nav {
+    margin: 30px;
+    background-color: $color-primary;
+
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.navigation {
+    list-style: none;
+    float: left;
+
+    li {
+        display: inline-block;
+        margin-left: 30px;
+    
+
+        &:first-child {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $color-secondary;
+        }
+    }
+}
+
+.button {
+    float: right;
+    
+    a {
+        text-align: center;
+        border-radius: 100px;
+        padding: 10px;
+        text-decoration: none;
+        color: $color-third;
+        display: inline-block;
+        text-transform: uppercase;
+        width: 150px;
+        background-color: $color-secondary;
+    }
+}
