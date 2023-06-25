@@ -1,0 +1,14 @@
+{
+  "name": "projeto-natours",
+  "version": "1.0.0",
+  "description": "finalizando o projeto com sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gustavonn07",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
