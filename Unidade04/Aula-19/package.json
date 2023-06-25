@@ -1,0 +1,14 @@
+{
+  "name": "aula-19",
+  "version": "1.0.0",
+  "description": "usando sass com o curso",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gustavonn07",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
