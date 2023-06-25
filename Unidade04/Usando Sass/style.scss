@@ -10,6 +10,13 @@ $color-primary: #f9ed69; // Yellow color
 $color-secondary: #f08a5d; // Orange color
 $color-third: #ec9ebe; // Pink color 
 
+// Aula 17
+@mixin link-edit($color) {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color;
+}
+
 nav {
     margin: 30px;
     background-color: $color-primary;
@@ -35,9 +42,7 @@ nav {
         }
 
         a {
-            text-decoration: none;
-            text-transform: uppercase;
-            color: $color-secondary;
+            @include link-edit($color-secondary);
         }
     }
 }
