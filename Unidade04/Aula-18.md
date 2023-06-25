@@ -12,4 +12,10 @@
 2. Instale Sass:
     - `npm install node-sass --save-dev`
 
-3. Use o Sass!
+3. Crie o CSS main e o Scss compilador:
+    - `sass input.scss output.scss`
+
+4. Coloque o CSS para compilar o Scss:
+    - `--watch input.scss:output.css`
+
+5. Use o Sass!

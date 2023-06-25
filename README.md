@@ -17,7 +17,7 @@ Nesse repositório irei guardar meus estudos do curso de CSS avançado e Sass (d
 - Conseguir entender como usar Flexbox e Grid em <strong>CSS</strong> e aprender <strong>Sass</strong>.
 - Completar todas as aulas e exercícios.
 - <strong>Não</strong> desistir no processo.
-- Unidades concluidas <strong>(3/10)</strong>.
+- Unidades concluidas <strong>(4/10)</strong>.
 
 <hr>
 <table align='center'>
@@ -58,10 +58,10 @@ Nesse repositório irei guardar meus estudos do curso de CSS avançado e Sass (d
   </tr>
 
   <tr align='center'>
-    <th colspan="2"><h2>Unidade 04</h2>
+    <th colspan="2"><h2>Unidade 04 (24/06/2023)</h2>
      <tr>
        <td><h3 align='center'>Resumo:</h3>
-       <td>
+       <td> Foi explicado como usar Sass e suas funções para melhorar o CSS. Foi ensinado o mais básico de node.js usando npm para instalar o Sass usando o sufixo .scss nos arquivos.
      </tr>
      <tr>
        <td><h3 align='center'>Tecnologias Estudadas:</h3>
