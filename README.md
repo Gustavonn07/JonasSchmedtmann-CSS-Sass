@@ -65,7 +65,7 @@ Nesse repositório irei guardar meus estudos do curso de CSS avançado e Sass (d
      </tr>
      <tr>
        <td><h3 align='center'>Tecnologias Estudadas:</h3>
-       <td align='center'>
+       <td align='center'> <img alt="Gustavo-SASS" height="40" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"> <img alt="Gustavo-NODEJS" height="40" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg">
      </tr>
   </tr>
 
