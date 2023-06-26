@@ -10,7 +10,7 @@
         border-radius: 10rem;
         transition: all 0.2s;
         position: relative;
-        font-size: 1.5rem;
+        font-size: $fonte-padrao;
     }
 
     /* Usa um efeito de clicado como se fosse na vida real com :hover e :active */
@@ -59,5 +59,31 @@
     &--animated {
         animation: moveInBottom .5s ease-out .75s;
         animation-fill-mode: backwards;
+    }
+}
+
+.btn-text {
+    
+    &:link,
+    &:visited {
+        font-size: $fonte-padrao;
+        color: $verdeMedio;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: .1rem solid $verdeMedio;
+        padding: .3rem;
+        transition: all .2s;
+    }
+
+    &:hover {
+        color: $branco;
+        background-color: $verdeMedio;
+        box-shadow: 0 1rem 2rem rgb($preto, .15);
+        transform: translateY(-.2rem);
+    }
+
+    &:active {
+        box-shadow: 0 .5rem 1rem rgb($preto, .15);
+        transform: translateY(.1rem);
     }
 }

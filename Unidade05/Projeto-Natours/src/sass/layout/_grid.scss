@@ -1,5 +1,6 @@
 .row {
     width: $grid-width;
+    height: $grid-height;
     margin: 0 auto;
     
     &:not(:last-child) {
@@ -11,10 +12,7 @@
     [class ^= "col-"] {
         float: left;
         height: 5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: $preto;
+        color: $cinzaClaro;
 
         &:not(:last-child) {
             margin-right: $grid-gap-horizontal;
