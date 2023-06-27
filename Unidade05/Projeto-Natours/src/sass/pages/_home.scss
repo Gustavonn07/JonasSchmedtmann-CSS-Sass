@@ -2,4 +2,22 @@
     background-color: $cinzaClaro2;
     padding: 25rem 0;
     margin-top: -20vh;
+    height: 100rem;
+}
+
+.section-features {
+    padding: 20rem 0;
+    background-image: linear-gradient(
+        to right bottom, 
+        rgb($verdeClaro, 0.8), 
+        rgb($verdeEscuro, 0.8)), 
+    url(images/nat-4.jpg);
+    background-size: cover;
+    transform: skewY(-7deg);
+    margin-top: -10rem;
+    height: 65rem;
+
+    & > * {
+        transform: skewY(7deg);
+    }
 }
