@@ -2,20 +2,19 @@
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
-    height: 50rem;
+    height: 52rem;
 
     &__side {
-        height: 50rem;
+        height: 52rem;
         width: 32rem;
         transition: all .8s ease;
-        font-size: 2rem;
-        color: #fff;
         position: absolute;
         top: 0;
         left: 0;
         backface-visibility: hidden;
         border-radius: .3rem;
         box-shadow: 0 1.5rem 4rem rgb($preto, .15);
+        overflow: hidden;
 
         &--front {
             background-color: $branco;
@@ -39,10 +38,80 @@
     }
 
     &:hover &__side--front {
-        transform: rotateY(180deg);
+        transform: rotateY(-180deg);
     }
 
     &:hover &__side--back {
         transform: rotateY(0);
+    }
+
+    // FRONT SIDE
+    &__picture {
+        background-size: cover;
+        height: 23rem;
+        background-blend-mode: screen;
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+        &--1 {
+            background-image: url(images/nat-5.jpg), linear-gradient(to right bottom, $laranjaClaro, $laranjaEscuro);;
+        }
+
+        &--2 {
+
+        }
+
+        &--3 {
+
+        }
+    }
+
+    &__heading {
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: $branco;
+        position: absolute;
+        top: 12rem;
+        right: 2rem;
+        text-align: right;
+        width: 75%;
+    }
+
+    &__heading-span {
+        padding: 1rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+
+        &--1 {
+            background-image: linear-gradient(to right bottom, rgb($laranjaClaro, .85), rgb($laranjaEscuro, .85));
+        }
+
+        &--2 {
+
+        }
+
+        &--3 {
+
+        }
+    }
+
+    &__details {
+        padding: 3rem;
+
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+
+            li {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+
+                &:not(:last-child) {
+                    border-bottom: .1rem solid $cinzaClaro3;
+                }
+            }
+        }
     }
 }
