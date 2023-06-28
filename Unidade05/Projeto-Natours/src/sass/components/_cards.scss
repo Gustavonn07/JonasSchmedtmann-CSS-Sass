@@ -3,6 +3,7 @@
     -moz-perspective: 150rem;
     position: relative;
     height: 52rem;
+    
 
     &__side {
         height: 52rem;
@@ -28,11 +29,11 @@
             }
 
             &-2 {
-                background-image: linear-gradient(to right bottom $verdeClaro, $verdeEscuro);
+                background-image: linear-gradient(to right bottom, $verdeClaro, $verdeEscuro);
             }
 
             &-3 {
-                background-image: linear-gradient(to right bottom $azulClaro, $azulEscuro);
+                background-image: linear-gradient(to right bottom, $azulClaro, $azulEscuro);
             }
         }
     }
@@ -52,17 +53,19 @@
         background-blend-mode: screen;
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        border-top-left-radius: .3rem;
+        border-top-right-radius: .3rem;
 
         &--1 {
-            background-image: url(images/nat-5.jpg), linear-gradient(to right bottom, $laranjaClaro, $laranjaEscuro);;
+            background-image: url(images/nat-5.jpg), linear-gradient(to right bottom, $laranjaClaro, $laranjaEscuro);
         }
 
         &--2 {
-
+            background-image: url(images/nat-6.jpg), linear-gradient(to right bottom, $verdeClaro, $verdeEscuro);
         }
 
         &--3 {
-
+            background-image: url(images/nat-7.jpg), linear-gradient(to right bottom, $azulClaro, $azulEscuro);
         }
     }
 
@@ -87,11 +90,11 @@
         }
 
         &--2 {
-
+            background-image: linear-gradient(to right bottom, rgb($verdeClaro, .85), rgb($verdeEscuro, .85));
         }
 
         &--3 {
-
+            background-image: linear-gradient(to right bottom, rgb($azulClaro, .85), rgb($azulEscuro, .85));
         }
     }
 
@@ -113,5 +116,31 @@
                 }
             }
         }
+    }
+
+    // BACK SIDE
+    &__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+    }
+
+    &__price-box {
+        text-align: center;
+        margin-bottom: 8rem;
+        color: $branco;    
+    }
+
+    &__price-only {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+
+    &__price-value {
+        font-size: 6rem;
+        font-weight: 100;
     }
 }

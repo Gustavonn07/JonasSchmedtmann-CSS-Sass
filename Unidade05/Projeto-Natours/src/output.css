@@ -131,6 +131,10 @@ body {
   margin-bottom: 8rem;
 }
 
+.u-margin-top-big {
+  margin-top: 42rem;
+}
+
 .btn {
   /* Usa um efeito de clicado como se fosse na vida real com :hover e :active */
   /* Diminui a sombra para da um efeito melhor */
@@ -158,6 +162,13 @@ body {
 .btn:active {
   transform: translateY(-0.1rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+.btn--green {
+  background-color: #55c57a;
+  color: #f7f7f7;
+}
+.btn--green::after {
+  background-color: #55c57a;
 }
 .btn--white {
   background-color: #fff;
@@ -288,10 +299,10 @@ body {
   background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
 }
 .card__side--back-2 {
-  background-image: linear-gradient(to right bottom #7ed56f, #28b485);
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
 }
 .card__side--back-3 {
-  background-image: linear-gradient(to right bottom #2998ff, #5643fa);
+  background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
 }
 .card:hover .card__side--front {
   transform: rotateY(-180deg);
@@ -305,9 +316,17 @@ body {
   background-blend-mode: screen;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
 }
 .card__picture--1 {
   background-image: url(images/nat-5.jpg), linear-gradient(to right bottom, #ffb900, #ff7730);
+}
+.card__picture--2 {
+  background-image: url(images/nat-6.jpg), linear-gradient(to right bottom, #7ed56f, #28b485);
+}
+.card__picture--3 {
+  background-image: url(images/nat-7.jpg), linear-gradient(to right bottom, #2998ff, #5643fa);
 }
 .card__heading {
   font-size: 2.8rem;
@@ -327,6 +346,12 @@ body {
 .card__heading-span--1 {
   background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85));
 }
+.card__heading-span--2 {
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85));
+}
+.card__heading-span--3 {
+  background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85));
+}
 .card__details {
   padding: 3rem;
 }
@@ -342,6 +367,27 @@ body {
 }
 .card__details ul li:not(:last-child) {
   border-bottom: 0.1rem solid #eee;
+}
+.card__cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+}
+.card__price-box {
+  text-align: center;
+  margin-bottom: 8rem;
+  color: #fff;
+}
+.card__price-only {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+.card__price-value {
+  font-size: 6rem;
+  font-weight: 100;
 }
 
 .header {
@@ -432,7 +478,7 @@ body {
 .section-tours {
   margin-top: -10rem;
   background-color: #f7f7f7;
-  padding: 25rem 0 50rem 0;
+  padding: 25rem 0 15rem 0;
 }
 
 /*# sourceMappingURL=output.css.map */

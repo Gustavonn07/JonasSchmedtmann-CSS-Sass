@@ -30,6 +30,15 @@
         box-shadow: 0 .5rem 1rem rgb($preto, 0.2);
     }
 
+    &--green {
+        background-color: $verdeMedio;
+        color: $cinzaClaro2;
+
+        &::after {
+            background-color: $verdeMedio;
+        }
+    }
+
     &--white {
         background-color: $branco;
         color: $cinzaClaro;
