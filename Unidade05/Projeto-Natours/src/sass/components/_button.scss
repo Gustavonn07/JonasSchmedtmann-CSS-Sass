@@ -1,4 +1,5 @@
 .btn {
+    &,
     &:link,
     &:visited {
         text-transform: uppercase;
@@ -11,11 +12,15 @@
         transition: all 0.2s;
         position: relative;
         font-size: $fonte-padrao;
+
+        // Para <buttons>:
+        border: none;
+        cursor: pointer;
     }
 
     /* Usa um efeito de clicado como se fosse na vida real com :hover e :active */
     /* Diminui a sombra para da um efeito melhor */
-    &:hover{
+    &:hover {
         transform: translateY(-.3rem);
         box-shadow: 0 1rem 2rem rgb($preto, 0.2);
 
@@ -25,7 +30,9 @@
         }
     }
 
-    &:active {
+    &:active,
+    &:focus  {
+        outline: none;
         transform: translateY(-.1rem);
         box-shadow: 0 .5rem 1rem rgb($preto, 0.2);
     }
