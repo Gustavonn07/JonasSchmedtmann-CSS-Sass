@@ -643,7 +643,6 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
-  padding: 0 0.4rem;
   transition: all 0.3s;
 }
 .footer__link:active, .footer__link:hover {
