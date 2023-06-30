@@ -24,6 +24,8 @@
         right: 6.5rem;
         background-image: radial-gradient($verdeClaro, $verdeEscuro);
         z-index: 1000;
+
+        transform: scale(70);
     }
 
     &__nav {
@@ -36,14 +38,48 @@
     }
 
     &__list {
-
+        position: absolute;
+        @include center-position;
+        list-style: none;
+        text-align: center;
     }
 
     &__item {
-
+        margin: 1rem;
     }
 
     &__link {
 
+        &:visited,
+        &:link {
+            display: inline-block;
+            font-size: 3rem;
+            font-weight: 300;
+            color: $branco;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            text-transform: uppercase;
+
+            // Com o bg-size podemos criar uma transição deixando ele maior (fora da box):
+            background-image: linear-gradient(120deg,
+                                              transparent 0%,
+                                              transparent 50%,
+                                              $branco 50%);
+            background-size: 230%;
+            transition: all .5s;
+
+            span {
+                margin-right: 1.5rem;
+                display: inline-block;
+            }
+        }
+
+        &:hover,
+        &:active {
+            background-position: 100%;
+            color: $verdeMedio;
+            transform: translateX(1rem);
+        }
+        
     }
 }
