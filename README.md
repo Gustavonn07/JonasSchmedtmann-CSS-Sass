@@ -14,7 +14,7 @@ Nesse repositório irei guardar meus estudos do curso de CSS avançado e Sass (d
 
 ## Objetivo:
 - Finalizar o curso dentro do periodo de 1 mes (Curso iniciado em 20/06/2023).
-- Conseguir entender como usar Flexbox e Grid em <strong>CSS</strong> e aprender <strong>Sass</strong>.
+- Conseguir entender como usar Float, Flexbox e Grid em <strong>CSS</strong> e aprender <strong>Sass</strong>.
 - Completar todas as aulas e exercícios.
 - <strong>Não</strong> desistir no processo.
 - Unidades concluidas <strong>(5/10)</strong>.
