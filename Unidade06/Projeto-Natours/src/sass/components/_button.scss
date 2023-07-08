@@ -5,73 +5,65 @@
         text-transform: uppercase;
         text-decoration: none;
         padding: 1.5rem 4rem;
-        /* Melhor para usar já que o botão não fica com width: 100% */
-        /* Diferente do block */
         display: inline-block;
         border-radius: 10rem;
-        transition: all 0.2s;
+        transition: all .2s;
         position: relative;
-        font-size: $fonte-padrao;
+        font-size: $default-font-size;
 
-        // Para <buttons>:
+        //Change for the <button> element
         border: none;
         cursor: pointer;
     }
-
-    /* Usa um efeito de clicado como se fosse na vida real com :hover e :active */
-    /* Diminui a sombra para da um efeito melhor */
+    
     &:hover {
-        transform: translateY(-.3rem);
-        box-shadow: 0 1rem 2rem rgb($preto, 0.2);
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($color-black,.2);
 
         &::after {
             transform: scaleX(1.4) scaleY(1.6);
             opacity: 0;
         }
     }
-
+    
     &:active,
-    &:focus  {
+    &:focus {
         outline: none;
-        transform: translateY(-.1rem);
-        box-shadow: 0 .5rem 1rem rgb($preto, 0.2);
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+    }
+    
+    &--white {
+        background-color: $color-white;
+        color: $color-grey-dark;
+
+        &::after {
+            background-color: $color-white;
+        }
     }
 
     &--green {
-        background-color: $verdeMedio;
-        color: $cinzaClaro2;
+        background-color: $color-primary;
+        color: $color-white;
 
         &::after {
-            background-color: $verdeMedio;
+            background-color: $color-primary;
         }
     }
-
-    &--white {
-        background-color: $branco;
-        color: $cinzaClaro;
-
-        &::after {
-            background-color: $branco;
-        }
-    }
-
+    
     &::after {
         content: "";
         display: inline-block;
-        /* É como se fosse um elemento filho do btn por isso da certo */
         height: 100%;
         width: 100%;
         border-radius: 10rem;
-        /* Referencia é o primeiro position relative que ele encontrar */
         position: absolute;
         top: 0;
         left: 0;
         z-index: -1;
         transition: all .4s;
     }
-
     
-
     &--animated {
         animation: moveInBottom .5s ease-out .75s;
         animation-fill-mode: backwards;
@@ -79,27 +71,26 @@
 }
 
 .btn-text {
-    
     &:link,
     &:visited {
-        font-size: $fonte-padrao;
-        color: $verdeMedio;
+        font-size: $default-font-size;
+        color: $color-primary;
         display: inline-block;
         text-decoration: none;
-        border-bottom: .1rem solid $verdeMedio;
-        padding: .3rem;
+        border-bottom: 1px solid $color-primary;
+        padding: 3px;
         transition: all .2s;
     }
 
     &:hover {
-        color: $branco;
-        background-color: $verdeMedio;
-        box-shadow: 0 1rem 2rem rgb($preto, .15);
-        transform: translateY(-.2rem);
+        background-color: $color-primary;
+        color: $color-white;
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        transform: translateY(-2px);
     }
 
     &:active {
-        box-shadow: 0 .5rem 1rem rgb($preto, .15);
-        transform: translateY(.1rem);
+        box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+        transform: translateY(0);
     }
 }

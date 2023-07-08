@@ -49,6 +49,12 @@ html {
 
 body {
   box-sizing: border-box;
+  padding: 3rem;
+}
+@media (max-width: 56.25em) {
+  body {
+    padding: 0;
+  }
 }
 
 @keyframes moveInLeft {
@@ -61,7 +67,7 @@ body {
   }
   100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translate(0);
   }
 }
 @keyframes moveInRight {
@@ -74,7 +80,7 @@ body {
   }
   100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translate(0);
   }
 }
 @keyframes moveInBottom {
@@ -84,7 +90,7 @@ body {
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translate(0);
   }
 }
 body {
@@ -93,7 +99,6 @@ body {
   /* font-size: 16px; */
   line-height: 1.7;
   color: #777;
-  padding: 3rem;
 }
 
 .heading-primary {
@@ -107,14 +112,31 @@ body {
   font-size: 6rem;
   font-weight: 400;
   letter-spacing: 3.5rem;
-  animation: moveInLeft 1s ease-out;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  /*
+  animation-delay: 3s;
+  animation-iteration-count: 3;
+  */
+}
+@media (max-width: 37.5em) {
+  .heading-primary--main {
+    letter-spacing: 1rem;
+    font-size: 5rem;
+  }
 }
 .heading-primary--sub {
   display: block;
   font-size: 2rem;
   font-weight: 700;
-  letter-spacing: 1.74rem;
+  letter-spacing: 1.75rem;
   animation: moveInRight 1s ease-out;
+}
+@media (max-width: 37.5em) {
+  .heading-primary--sub {
+    letter-spacing: 0.5rem;
+  }
 }
 
 .heading-secondary {
@@ -127,7 +149,16 @@ body {
   color: transparent;
   letter-spacing: 0.2rem;
   transition: all 0.2s;
-  cursor: default;
+}
+@media (max-width: 56.25em) {
+  .heading-secondary {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .heading-secondary {
+    font-size: 2.5rem;
+  }
 }
 .heading-secondary:hover {
   transform: skewY(2deg) skewX(15deg) scale(1.1);
@@ -152,7 +183,7 @@ body {
 }
 
 .u-margin-bottom-small {
-  margin-bottom: 2rem !important;
+  margin-bottom: 1.5rem !important;
 }
 
 .u-margin-bottom-medium {
@@ -163,24 +194,18 @@ body {
   margin-bottom: 8rem !important;
 }
 
-.u-margin-top-huge {
-  margin-top: 58rem !important;
+.u-margin-top-big {
+  margin-top: 8rem !important;
 }
 
-.u-margin-top-big {
+.u-margin-top-huge {
   margin-top: 10rem !important;
 }
 
-.btn {
-  /* Usa um efeito de clicado como se fosse na vida real com :hover e :active */
-  /* Diminui a sombra para da um efeito melhor */
-}
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
-  /* Melhor para usar já que o botão não fica com width: 100% */
-  /* Diferente do block */
   display: inline-block;
   border-radius: 10rem;
   transition: all 0.2s;
@@ -190,7 +215,7 @@ body {
   cursor: pointer;
 }
 .btn:hover {
-  transform: translateY(-0.3rem);
+  transform: translateY(-3px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 .btn:hover::after {
@@ -199,15 +224,8 @@ body {
 }
 .btn:active, .btn:focus {
   outline: none;
-  transform: translateY(-0.1rem);
+  transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-}
-.btn--green {
-  background-color: #55c57a;
-  color: #f7f7f7;
-}
-.btn--green::after {
-  background-color: #55c57a;
 }
 .btn--white {
   background-color: #fff;
@@ -216,14 +234,19 @@ body {
 .btn--white::after {
   background-color: #fff;
 }
+.btn--green {
+  background-color: #55c57a;
+  color: #fff;
+}
+.btn--green::after {
+  background-color: #55c57a;
+}
 .btn::after {
   content: "";
   display: inline-block;
-  /* É como se fosse um elemento filho do btn por isso da certo */
   height: 100%;
   width: 100%;
   border-radius: 10rem;
-  /* Referencia é o primeiro position relative que ele encontrar */
   position: absolute;
   top: 0;
   left: 0;
@@ -240,19 +263,19 @@ body {
   color: #55c57a;
   display: inline-block;
   text-decoration: none;
-  border-bottom: 0.1rem solid #55c57a;
-  padding: 0.3rem;
+  border-bottom: 1px solid #55c57a;
+  padding: 3px;
   transition: all 0.2s;
 }
 .btn-text:hover {
-  color: #fff;
   background-color: #55c57a;
+  color: #fff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-  transform: translateY(-0.2rem);
+  transform: translateY(-2px);
 }
 .btn-text:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  transform: translateY(0.1rem);
+  transform: translateY(0);
 }
 
 .composition {
@@ -261,6 +284,7 @@ body {
 .composition__photo {
   width: 55%;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
   position: absolute;
   z-index: 10;
   transition: all 0.2s;
@@ -292,14 +316,10 @@ body {
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;
   padding: 2.5rem;
-  height: 30rem;
   text-align: center;
-  border-radius: 0.3rem;
+  border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  transition: all 0.3s;
-}
-.feature-box:hover {
-  transform: scale(1.03) translateY(-1.5rem);
+  transition: transform 0.3s;
 }
 .feature-box__icon {
   font-size: 6rem;
@@ -308,6 +328,9 @@ body {
   background-image: linear-gradient(to right, #7ed56f, #28b485);
   -webkit-background-clip: text;
   color: transparent;
+}
+.feature-box:hover {
+  transform: translateY(-1.5rem) scale(1.03);
 }
 
 .card {
@@ -318,15 +341,15 @@ body {
 }
 .card__side {
   height: 52rem;
-  width: 32rem;
   transition: all 0.8s ease;
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
   backface-visibility: hidden;
-  border-radius: 0.3rem;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
   overflow: hidden;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 }
 .card__side--front {
   background-color: #fff;
@@ -353,34 +376,35 @@ body {
   background-size: cover;
   height: 23rem;
   background-blend-mode: screen;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-  border-top-left-radius: 0.3rem;
-  border-top-right-radius: 0.3rem;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
 .card__picture--1 {
-  background-image: url(images/nat-5.jpg), linear-gradient(to right bottom, #ffb900, #ff7730);
+  background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(images/nat-5.jpg);
 }
 .card__picture--2 {
-  background-image: url(images/nat-6.jpg), linear-gradient(to right bottom, #7ed56f, #28b485);
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(images/nat-6.jpg);
 }
 .card__picture--3 {
-  background-image: url(images/nat-7.jpg), linear-gradient(to right bottom, #2998ff, #5643fa);
+  background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(images/nat-7.jpg);
 }
 .card__heading {
   font-size: 2.8rem;
   font-weight: 300;
   text-transform: uppercase;
+  text-align: right;
   color: #fff;
   position: absolute;
   top: 12rem;
   right: 2rem;
-  text-align: right;
   width: 75%;
 }
 .card__heading-span {
   padding: 1rem 1.5rem;
   -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 .card__heading-span--1 {
   background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85));
@@ -405,7 +429,7 @@ body {
   padding: 1rem;
 }
 .card__details ul li:not(:last-child) {
-  border-bottom: 0.1rem solid #eee;
+  border-bottom: 1px solid #eee;
 }
 .card__cta {
   position: absolute;
@@ -417,8 +441,8 @@ body {
 }
 .card__price-box {
   text-align: center;
-  margin-bottom: 8rem;
   color: #fff;
+  margin-bottom: 8rem;
 }
 .card__price-only {
   font-size: 1.4rem;
@@ -488,7 +512,7 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: -10;
+  z-index: -1;
   opacity: 0.15;
   overflow: hidden;
 }
@@ -580,48 +604,67 @@ body {
 }
 
 .popup {
-  width: 100%;
   height: 100vh;
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 5000;
   background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s;
+}
+.popup__content {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 75%;
+  background-color: #fff;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  display: table;
+  overflow: hidden;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.25);
+  transition: all 0.5s 0.2s;
 }
 .popup__left {
   width: 33.333333%;
   display: table-cell;
 }
-.popup__left .popup__img {
-  display: block;
-  width: 100%;
-}
 .popup__right {
-  width: 66.666667%;
+  width: 66.6666667%;
   display: table-cell;
   vertical-align: middle;
   padding: 3rem 5rem;
 }
-.popup__right .popup__text {
+.popup__img {
+  display: block;
+  width: 100%;
+}
+.popup__text {
   font-size: 1.4rem;
   margin-bottom: 4rem;
   -moz-column-count: 2;
   -moz-column-gap: 4rem;
-  -moz-column-rule: 0.1rem solid #eee;
+  -moz-column-rule: 1px solid #eee;
   column-count: 2;
   column-gap: 4rem;
-  column-rule: 0.1rem solid #eee;
-  hyphens: auto;
+  column-rule: 1px solid #eee;
   -moz-hyphens: auto;
-  -webkit-hyphens: auto;
   -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }
 .popup:target {
   opacity: 1;
   visibility: visible;
+}
+.popup:target .popup__content {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
 }
 .popup__close:link, .popup__close:visited {
   color: #777;
@@ -634,28 +677,8 @@ body {
   transition: all 0.2s;
   line-height: 1;
 }
-.popup__close:hover, .popup__close:active {
+.popup__close:hover {
   color: #55c57a;
-}
-.popup:target .popup__content {
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
-}
-.popup__content {
-  display: table;
-  position: absolute;
-  z-index: 6000;
-  width: 75%;
-  background-color: #fff;
-  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
-  border-radius: 0.3rem;
-  overflow: hidden;
-  opacity: 0;
-  transform: translate(-50%, -50%) scale(0.25);
-  transition: all 0.5s 0.2s;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .navigation__checkbox {
@@ -804,8 +827,18 @@ body {
   max-width: 114rem;
   margin: 0 auto;
 }
+@media (max-width: 56.25em) {
+  .row {
+    max-width: 50rem;
+  }
+}
 .row:not(:last-child) {
   margin-bottom: 8rem;
+}
+@media (max-width: 56.25em) {
+  .row:not(:last-child) {
+    margin-bottom: 6rem;
+  }
 }
 .row::after {
   content: "";
@@ -817,6 +850,17 @@ body {
 }
 .row [class^=col-]:not(:last-child) {
   margin-right: 6rem;
+}
+@media (max-width: 56.25em) {
+  .row [class^=col-]:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 6rem;
+  }
+}
+@media (max-width: 56.25em) {
+  .row [class^=col-] {
+    width: 100% !important;
+  }
 }
 .row .col-1-of-2 {
   width: calc((100% - 6rem) / 2);
