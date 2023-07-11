@@ -17,7 +17,7 @@ Nesse repositório irei guardar meus estudos do curso de CSS avançado e Sass (d
 - Conseguir entender como usar Float, Flexbox e Grid em <strong>CSS</strong> e aprender <strong>Sass</strong>.
 - Completar todas as aulas e exercícios.
 - <strong>Não</strong> desistir no processo.
-- Unidades concluidas <strong>(5/10)</strong>.
+- Unidades concluidas <strong>(6/10)</strong>.
 
 <hr>
 <table align='center'>
@@ -81,14 +81,14 @@ Nesse repositório irei guardar meus estudos do curso de CSS avançado e Sass (d
      </tr>
   </tr>
   <tr align='center'>
-    <th colspan="2"><h2>Unidade 06</h2>
+    <th colspan="2"><h2>Unidade 06 (10/07/2023)</h2>
      <tr>
        <td><h3 align='center'>Resumo:</h3>
-       <td>
+       <td> Foi finalizado o projeto Natours com foco no uso de imagens responsivas e designs modernos. No fim foi utilizado npm junto de Nodejs para comprimir o css do projeto.
      </tr>
      <tr>
        <td><h3 align='center'>Tecnologias Estudadas:</h3>
-       <td align='center'>
+       <td align='center'>  <img alt="Gustavo-SASS" height="40" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"> <img alt="Gustavo-CSS" height="40" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"> <img alt="Gustavo-NODEJS" height="40" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg"> <img alt="Gustavo-npm" height="40" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/npm/npm-original-wordmark.svg">
      </tr>
   </tr>
   <tr align='center'>
