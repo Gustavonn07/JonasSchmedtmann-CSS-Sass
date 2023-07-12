@@ -4,7 +4,12 @@
   "description": "Landing page para o projeto trillo",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "sass --watch src/sass/main.scss:src/css/main.css"
+    "watch:sass": "sass --watch src/sass/main.scss:src/css/main.css",
+
+    "compile:sass": "node-sass src/sass/main.scss src/css/main.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' src/css/main.comp.css -o src/css/main.prefix.css",
+    "compress:css": "node-sass src/css/main.prefix.css src/css/main.css --main-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
   },
   "author": "Gustavonn07",
   "license": "ISC",
