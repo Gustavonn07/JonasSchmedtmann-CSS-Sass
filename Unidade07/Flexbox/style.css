@@ -1,4 +1,4 @@
-/* Aula 55, 56 */
+/* Aula 55, 56, 57 */
 
 * {
     margin: 0;
@@ -16,6 +16,10 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    flex-wrap: wrap;
+
+    align-content: center;
 }
 
 .item {
@@ -41,7 +45,7 @@
     flex: 1;
 }
 
-.i4 {
-    align-self: flex-end;
+.i4, .i9 {
+    /* align-self: flex-end; */
     order: -1;
 }
