@@ -190,6 +190,25 @@ body {
   color: var(--color-grey-light-4);
 }
 
+.galery {
+  display: flex;
+}
+.galery__photo {
+  width: 100%;
+  display: block;
+}
+
+.overview {
+  display: flex;
+}
+.overview__stars {
+  margin-right: auto;
+}
+.overview__icon-star, .overview__icon-location {
+  width: 1.75rem;
+  height: 1.75rem;
+  fill: var(--color-primary);
+}
 .container {
   max-width: 120rem;
   margin: 8rem auto;
@@ -221,7 +240,6 @@ body {
 
 .hotel-view {
   background-color: var(--color-white);
-  background-color: orangered;
   height: 80rem;
   flex: 1;
 }

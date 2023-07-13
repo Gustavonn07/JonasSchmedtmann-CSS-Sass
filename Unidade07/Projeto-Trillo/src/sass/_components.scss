@@ -5,6 +5,7 @@
     margin-left: 2rem;
 }
 
+
 //////////////////////////////////////////
 /// SEARCH:
 .search {
@@ -62,6 +63,7 @@
     }
 }
 
+
 //////////////////////////////////////////
 /// USER NAVIGATION:
 .user-nav {
@@ -114,6 +116,7 @@
         margin-right: 1rem;
     }
 }
+
 
 //////////////////////////////////////////
 /// SIDE NAVIGATION:
@@ -174,6 +177,7 @@
     }
 }
 
+
 //////////////////////////////////////////
 /// LEGAL TEXT:
 .legal {
@@ -181,4 +185,54 @@
     text-align: center;
     padding: 2.5rem;
     color: var(--color-grey-light-4);
+}
+
+
+//////////////////////////////////////////
+/// GALERY:
+.galery {
+    display: flex;
+
+    &__photo {
+        width: 100%;
+        display: block;
+    }
+}
+
+
+//////////////////////////////////////////
+/// OVERVIEW:
+.overview {
+    display: flex;
+
+    &__heading {
+
+    }
+
+    &__stars {
+        margin-right: auto;
+    }
+
+    &__icon-star,
+    &__icon-location {
+        width: 1.75rem;
+        height: 1.75rem;
+        fill: var(--color-primary);
+    }
+
+    &__location {
+        
+    }
+
+    &__rating {
+
+    }
+    
+    &__rating-avarage {
+            
+    }
+
+    &__rating-count {
+
+    }
 }
