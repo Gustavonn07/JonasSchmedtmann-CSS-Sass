@@ -15,9 +15,14 @@
     --color-white: #fff;
     --color-black: #000;
 
+    --shadow-light-1: rgba(0, 0, 0, .06);
+    
     --shadow-dark-1: rgba(0, 0, 0, .3);
     --shadow-dark-2: rgba(0, 0, 0, .25);
+
+    --line: .1rem solid var(--color-grey-light-2);
 }
+
 
 * {
     margin: 0;
