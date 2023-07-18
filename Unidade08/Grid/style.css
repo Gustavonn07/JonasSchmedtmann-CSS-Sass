@@ -1,28 +1,18 @@
-/* Aula 74 */
-
-html,
-body {
-    height: 100%;
-}
-
-/* body::after {
-    content: "Hi, mom.";
-} */
-
-/* @media (min-width: 300px) {
-    .cool {
-        padding: 5%;
-    }
-} */
+/* Aula 74, 75 */
 
 .container {
     background-color: #eee;
     width: 1000px;
-    margin: 30px auto;
+    height: 500px;
+    margin: 60px auto;
+    border-radius: 4px;
+    padding: 10px;
 
     display: grid;
-    grid-template-rows: 150px 150px;
-    grid-template-columns: 150px 150px 150px;
+    /* Use fr para ter o tamanho em fração do total (lembra flex-grow) */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    /* grid-template-rows: repeat(2, 150px); */
     row-gap: 30px;
     column-gap: 50px;
 }
@@ -32,6 +22,9 @@ body {
     font-size: 30px;
     font-family: sans-serif;
     color: white;
+
+    border-radius: 4px;
+    box-shadow: 0 4px 8px #00000080;
 }
 
 .item--1 {
