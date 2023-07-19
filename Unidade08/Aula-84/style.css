@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: lightcyan;
+}
+
+.container {
+    background-color: lightgoldenrodyellow;
+    width: 90%;
+    margin: 80px auto;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px #00000080;
+    padding: 12px;
+
+    display: grid;
+    gap: 20px;
+    grid-template-rows: repeat(2, minmax(150px, min-content));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.container__item {
+    border-radius: 5px;
+    box-shadow: 0 3px 8px #00000060;
+    padding: 8px;
+    font-size: 30px;
+}
+
+.container__item--1 {
+    background-color: aquamarine;
+}
+
+.container__item--2 {
+    background-color: darkkhaki;
+}
+
+.container__item--3 {
+    background-color: crimson;
+}
+
+.container__item--4 {
+    background-color: papayawhip;
+}
+
+.container__item--5 {
+    background-color: goldenrod;
+}
+
+.container__item--6 {
+    background-color: royalblue;
+}
+
+.container__item--7 {
+    background-color: bisque;
+}
+
+.container__item--8 {
+    background-color: burlywood;
+}
