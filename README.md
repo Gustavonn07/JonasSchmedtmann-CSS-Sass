@@ -17,7 +17,7 @@ Nesse repositório irei guardar meus estudos do curso de CSS avançado e Sass (d
 - Conseguir entender como usar Float, Flexbox e Grid em <strong>CSS</strong> e aprender <strong>Sass</strong>.
 - Completar todas as aulas e exercícios.
 - <strong>Não</strong> desistir no processo.
-- Unidades concluidas <strong>(7/10)</strong>.
+- Unidades concluidas <strong>(8/10)</strong>.
 
 <hr>
 <table align='center'>
@@ -103,14 +103,14 @@ Nesse repositório irei guardar meus estudos do curso de CSS avançado e Sass (d
      </tr>
   </tr>
   <tr align='center'>
-    <th colspan="2"><h2>Unidade 08</h2>
+    <th colspan="2"><h2>Unidade 08 (19/07/2023)</h2>
      <tr>
        <td><h3 align='center'>Resumo:</h3>
-       <td>
+       <td> Foi explicado o básico de Grid com (`display: grid`), usando todas as propridedas possíveis e com responsividade.
      </tr>
      <tr>
        <td><h3 align='center'>Tecnologias Estudadas:</h3>
-       <td align='center'>
+       <td align='center'> <img alt="Gustavo-CSS" height="40" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
      </tr>
   </tr>
   <tr align='center'>
