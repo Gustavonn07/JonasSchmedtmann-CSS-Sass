@@ -95,7 +95,7 @@ Nesse repositório irei guardar meus estudos do curso de CSS avançado e Sass (d
     <th colspan="2"><h2>Unidade 07 (14/07/2023)</h2>
      <tr>
        <td><h3 align='center'>Resumo:</h3>
-       <td> Foi iniciado e finalizado o projeto Trillo com foco em uso de Flexbox `display: flex`, além de diversas dicas sobre responsividade e apresentado novas classes de CSS3 e novas tags de HTML5 (com foco em SVGs). 
+       <td> Foi iniciado e finalizado o projeto Trillo com foco em uso de Flexbox (`display: flex`), além de diversas dicas sobre responsividade e apresentado novas classes de CSS3 e novas tags de HTML5 (com foco em SVGs). 
      </tr>
      <tr>
        <td><h3 align='center'>Tecnologias Estudadas:</h3>
@@ -106,7 +106,7 @@ Nesse repositório irei guardar meus estudos do curso de CSS avançado e Sass (d
     <th colspan="2"><h2>Unidade 08 (19/07/2023)</h2>
      <tr>
        <td><h3 align='center'>Resumo:</h3>
-       <td> Foi explicado o básico de Grid com `display: grid`, usando todas as propridedas possíveis e com responsividade.
+       <td> Foi explicado o básico de Grid com (`display: grid`), usando todas as propridedas possíveis e com responsividade.
      </tr>
      <tr>
        <td><h3 align='center'>Tecnologias Estudadas:</h3>
