@@ -1,4 +1,28 @@
 .gallery {
-    background-color: $color-grey-dark-1;
+    background-color: $color-grey-light-1;
     grid-column: full-start / full-end;
+
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(7, 5vw);
+    padding: 1.5rem;
+    gap: 1.5rem;
+
+    &__item {
+
+        &--1 {
+            grid-area: 1 / 1 / span 2 / span 2;
+        }
+
+        &--2 {
+            grid-area: 1 / 3 / span 3 / span 3;
+        }
+    }
+    
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
 }
