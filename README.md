@@ -2,6 +2,7 @@
 Nesse repositório irei guardar meus estudos do curso de CSS avançado e Sass (da <span style="color: cyan">udemy</span>) do professor Jonas Schmedtmann.
 
 ### Link: <a href="https://www.udemy.com/course/advanced-css-and-sass/" target="_blank" style="text-decoration: none; color: cyan;">Ir para udemy.</a>
+### Certificado: https://www.udemy.com/certificate/UC-31467068-531a-46de-9500-e8c098d89644/
 
 <hr>
 
