@@ -92,6 +92,30 @@ body {
 .sidebar {
   background-color: #c69963;
   grid-area: 1/sidebar-start/-1/sidebar-end;
+  display: flex;
+  justify-content: center;
+}
+
+.nav__btn::before, .nav__btn::after, .nav__btn {
+  background-color: #fff;
+  height: 2px;
+  width: 4.5rem;
+}
+
+.nav__btn {
+  border: none;
+  border-radius: 0;
+  margin-top: 4rem;
+}
+.nav__btn::before, .nav__btn::after {
+  content: "";
+  display: block;
+}
+.nav__btn::before {
+  transform: translateY(-1.5rem);
+}
+.nav__btn::after {
+  transform: translateY(1.3rem);
 }
 
 .header {
